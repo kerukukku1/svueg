@@ -3,8 +3,10 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+import clickPlugin from '@/index.js'
 
 Vue.config.productionTip = false
+Vue.use(clickPlugin)
 
 /* eslint-disable no-new */
 new Vue({
