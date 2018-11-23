@@ -1,5 +1,5 @@
 # svueg
-
+[![Build Status](https://travis-ci.org/kerukukku1/svueg.svg?branch=master)](https://travis-ci.org/kerukukku1/svueg)
 > A Vue.js project
 
 ## Build Setup
