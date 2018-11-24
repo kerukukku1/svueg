@@ -1,14 +1,16 @@
 /* eslint-disable */
-const clickPlugin = {
-    install(Vue, options={}){
-        Vue.directive('svg-click', {
-            bind : function(element) {
-                element.addEventListener('click', function(){
-                    console.log("click!")
-                }, false)
-            }
-        })
-    }
+
+const components = [
+
+]
+
+const install = function(Vue, options={}){
+    components.forEach(component =>{
+        Vue.component(component.name, component)
+    })
+}
+module.exports = {
+    install
 }
 
-export default clickPlugin
+export default module.exports
