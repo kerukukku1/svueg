@@ -1,6 +1,7 @@
 <template>
   <div class="hello">
-    <h1 v-svg-click>{{ msg }}</h1>
+    <h1>{{ msg }}</h1>
+    <p v-setHeight="'red'"> a~~~~~h</p>
     <h2>Essential Links</h2>
     <ul>
       <li>

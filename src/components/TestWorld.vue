@@ -1,6 +1,7 @@
 <template>
   <div>
     <h1>{{msg}}</h1>
+    <p v-setHeight="red"></p>
   </div>
 </template>
 
