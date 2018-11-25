@@ -3,6 +3,7 @@
     <h1>{{ msg }}</h1>
     <ultra-svg :size="{width:'60vw', height:500}">
       <ultra-line :property="lineprop"></ultra-line>
+      <ultra-circle :property="circleprop"></ultra-circle>
     </ultra-svg>
   </div>
 </template>
@@ -21,6 +22,12 @@ export default {
         stroke : "green",
         strokeWidth : "5",
         strokeLinecap: "round"
+      },
+      circleprop : {
+        cx : 140,
+        cy : 140,
+        r : 40,
+        stroke : "cyan"
       }
     }
   }
