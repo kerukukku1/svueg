@@ -1,7 +1,9 @@
 <template>
   <div class="hello">
     <h1>{{ msg }}</h1>
-    <ultra-svg></ultra-svg>
+    <ultra-svg :size="{width:'60vw', height:500}">
+      <ultra-line :property="lineprop"></ultra-line>
+    </ultra-svg>
   </div>
 </template>
 
@@ -10,7 +12,16 @@ export default {
   name: 'HelloWorld',
   data () {
     return {
-      msg: 'svueg demo page.'
+      msg: 'svueg demo page.',
+      lineprop : {
+        x1 : "10",
+        x2 : "100",
+        y1 : "50",
+        y2 : "150",
+        stroke : "green",
+        strokeWidth : "5",
+        strokeLinecap: "round"
+      }
     }
   }
 }

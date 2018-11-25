@@ -1,5 +1,6 @@
 import setHeight from '@/directives/setHeight'
 import ultraSVG from '@/components/UltraSVG'
+import ultraLINE from '@/components/UltraLINE'
 
 /* eslint-disable */
 
@@ -8,7 +9,8 @@ const directives = [
 ]
 
 const components = [
-    ultraSVG
+    ultraSVG,
+    ultraLINE
 ]
 
 const install = function(Vue, options={}){
